@@ -38,6 +38,35 @@ public class Main {
 		for (Student student : students) {
 			System.out.println(student.name+" "+student.surname);
 		}
+		
+		Instructor instructor1 = new Instructor(1, "Engin", "Demiroð", 35, "Yazýlým geliþtirici yetiþtirmede uzman");
+		instructor1.id =1;
+		instructor1.name ="Engin";
+		instructor1.surname ="Demiroð";
+		instructor1.age =35;
+		instructor1.information="Yazýlým geliþtirici yetiþtirmede uzman";
+		
+		Instructor instructor2 = new Instructor(2, "Kerem", "Varýþ", 32, "Uzman yazýlým geliþtirici");
+		instructor2.id =2;
+		instructor2.name ="Kerem";
+		instructor2.surname ="Varýþ";
+		instructor2.age =32;
+		instructor2.information="Uzman yazýlým geliþtirici";
+		
+		
+		Instructor[] instructors = {instructor1, instructor2};
+		
+		for(Instructor instructor : instructors) {
+			System.out.println(instructor.name+" "+instructor.surname);
+		}
+		
+	    InstructorManager instructorManager = new InstructorManager();
+	    
+	    instructorManager.add(instructor1);
+	    
+	    instructorManager.delete(instructor1);
+	    
+	    instructorManager.update(instructor1);
 
 		CourseManager courseManager = new CourseManager();
 
