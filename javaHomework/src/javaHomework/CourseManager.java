@@ -8,7 +8,5 @@ public class CourseManager {
 	public void comleted(Course course) {
 		System.out.println("Kurs Tamamlandı."+" "+course.name);
 	}
-    public CourseManager() {
-		// TODO Auto-generated constructor stub
-	}
+
 }
