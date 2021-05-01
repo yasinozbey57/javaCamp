@@ -20,6 +20,8 @@ public class Main {
 		for (Course course : courses) {
 			System.out.println(course.name + " " + course.detail);
 		}
+		
+		System.out.println("-----------------------");
 
 		Student student1 = new Student(1,"Yasin","Özbey","25");
 		student1.id = 1;
@@ -38,6 +40,8 @@ public class Main {
 		for (Student student : students) {
 			System.out.println(student.name+" "+student.surname);
 		}
+		
+		System.out.println("-----------------------");
 		
 		Instructor instructor1 = new Instructor(1, "Engin", "Demiroğ", 35, "Yazılım geliştirici yetiştirmede uzman");
 		instructor1.id =1;
@@ -60,6 +64,8 @@ public class Main {
 			System.out.println(instructor.name+" "+instructor.surname);
 		}
 		
+		System.out.println("-----------------------");
+		
 	    InstructorManager instructorManager = new InstructorManager();
 	    
 	    instructorManager.add(instructor1);
@@ -67,6 +73,8 @@ public class Main {
 	    instructorManager.delete(instructor1);
 	    
 	    instructorManager.update(instructor1);
+	    
+	    System.out.println("-----------------------");
 
 		CourseManager courseManager = new CourseManager();
 
@@ -77,6 +85,8 @@ public class Main {
 		courseManager.comleted(course1);
 
 		courseManager.comleted(course2);
+		
+		System.out.println("-----------------------");
 
 		StudentManager studentManager = new StudentManager();
 
