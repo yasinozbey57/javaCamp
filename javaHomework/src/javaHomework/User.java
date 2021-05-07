@@ -1,12 +1,8 @@
 package javaHomework;
 
-public class User extends Member {
+public class User {
 	
-	
-	String Address;
-	
-	public User(String address) {
-		Address = address;
-	}
+	int id;
+	String email;
 	
 }

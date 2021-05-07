@@ -82,9 +82,9 @@ public class Main {
 
 		courseManager.add(course2);
 
-		courseManager.comleted(course1);
+		courseManager.completed(course1);
 
-		courseManager.comleted(course2);
+		courseManager.completed(course2);
 		
 		System.out.println("-----------------------");
 
