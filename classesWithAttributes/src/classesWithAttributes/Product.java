@@ -3,7 +3,7 @@ package classesWithAttributes;
 public class Product {
 	
 	public Product(int id, String name, String description,
-			double price, int stockAmount, String color){
+			double price, int stockAmount, String color, String kod){
 		System.out.println("Yapýcý blok çalýþtý");
 		this.id = id;
 		this.color = color;
@@ -11,6 +11,7 @@ public class Product {
 		this.price = price;
 		this.description = description;
 		this.stockAmount = stockAmount;
+		this.kod = kod;
 	}
 	
 	public Product() {
@@ -64,5 +65,8 @@ public class Product {
 	}
 	public String getKod() {
 		return this.name.substring(0,1) + id;
+	}
+	public void setKod(String kod) {
+		this.kod = kod;
 	}
 }
